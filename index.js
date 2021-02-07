@@ -1,11 +1,6 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
-const fs = require('fs');
-
-const cheerio = require('cheerio');
-const request = require('request');
-const { error } = require('console');
-
+var Discord = require('discord.js');
+var bot = new Discord.Client();
+var fs = require('fs')
 
 var commandslist = fs.readFileSync ('source/commands.txt', 'utf8')
 var token = fs.readFileSync ('source/token.txt', 'utf8')
@@ -69,12 +64,12 @@ if (msg === prefix + 'EASTER EGG' || msg === prefix + 'EASTEREGG') {
 }
 
 //random dogs
-switch (args[0]) {
-    case 'dog':
-    image(message);
-
-    break;
-}
+//if (msg === prefix + 'DOG') {
+//    number = 29
+//    ImageNumber = Math.floor(Math.random() * (number -1 +1)) +1;
+//    message.channel.send( {files: ['./dog/' + ImageNumber + '.png']})
+//    message.delete()
+//}
 
 //Updates
     if (msg === prefix + 'UPDATE') {
@@ -107,45 +102,8 @@ catch (error) {
 
 }
 
-});
-
-//for random dog images
-function dogimage(message){
-
-    var options = {
-        url: "https://results.dogpile.com/serp?qc=images&q=" + "dog",
-        method: "GET",
-        headers: {
-            "Accept": "text/html",
-            "User-Agent": "Chrome"
-        }
-    };
-
-    request(options, function(error, response, responseBody) {
-        if (error) {
-            return;
-        }
-
-        $ = cheerio.load(responseBody);
-
-        var links = $(".image a.link");
-
-        var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
-
-        console.log(urls);
-
-        if (!urls.length) {
-
-            return;
-        }
-
-        //send result
-        message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
-    });
-
-}
-
 //bot.login
+});
 bot.login(token)
 
 //End of the Code

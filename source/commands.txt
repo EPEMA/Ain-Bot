@@ -1,0 +1,9 @@
+**COMMANDS**
+
+`.help` or `.commands` is showing you this
+
+`.ping` is showing you my current Ping (ms)
+
+`.team` shows the current Team of the Pukima Bot
+
+`.invite` Invite this Bot to your Server
