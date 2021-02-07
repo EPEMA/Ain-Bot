@@ -7,11 +7,6 @@ var token = fs.readFileSync ('source/token.txt', 'utf8')
 var team = fs.readFileSync ('source/team.txt', 'utf8')
 var update = fs.readFileSync ('source/update.txt', 'utf8')
 
-const activities_list = [
-"by Pukima#1143",
-".help",
-];
-
 //when the Bot is ready
 bot.on('ready', () => {
 console.log('bot is online...');
