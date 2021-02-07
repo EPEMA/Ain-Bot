@@ -1,0 +1,20 @@
+{
+  "name": "pbot",
+  "version": "1.0.0",
+  "description": "Hello, this is the Source Code from the official Ain Bot.",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js debug",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "colors": "1.1.2"
+  }
+}
