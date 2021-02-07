@@ -1,6 +1,0 @@
-`.invite` wurde hinzugefügt
-
-
-**`Version: 1.1.3`**
-
-`Einladungslink:` *https://bit.ly/30j8iHS*
