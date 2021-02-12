@@ -1,7 +1,8 @@
-removed `.dog` due an error
+`.update` can now be used by everyone
+removed `.dog` cause it had an error :(
 All Invite-Links were updated
 
 
-**`Version: 1.1.4`**
+**`Version: 1.1.5`**
 
 `Invite:` *https://bit.ly/36Di38d*

@@ -67,18 +67,13 @@ if (msg === prefix + 'EASTER EGG' || msg === prefix + 'EASTEREGG') {
 //}
 
 //Updates
-    if (msg === prefix + 'UPDATE') {
+if (msg === prefix + 'UPDATE') {
     message.delete()
-
-        if (message.member.has(473413778181062656)) return;
-    const embed = new Discord.RichEmbed()
-    .setThumbnail('https://i.imgur.com/l09lT1h.png')
-     .setTitle('**UPDATE FOR PUKIMA BOT**')
-      .setDescription(update)
-       .setColor ('C0CAC00')
-        message.channel.send(embed)
-//mention for updates
-    message.channel.send('<@&666328873566339072>')
+       const embed = new Discord.RichEmbed()
+       .setTitle('**UPDATE FOR PBOT**')
+       .setDescription(update)
+       .setColor ('1919FF')
+       message.channel.send(embed)
 }
 
 //invite
